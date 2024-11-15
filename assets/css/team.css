@@ -1,0 +1,304 @@
+/* Cormorant Garamond */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* Playfair Display */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* Libre Baskerville */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* ROBOTO */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* MONTSERRAT */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Colores principales */
+@font-face {
+  font-family: "Nouvel";
+  src: url(../fonts/NouvelR.ttf), url(../fonts/NouvelR.woff),
+    url(../fonts/NouvelR.woff2);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --negro-profundo: #0d0d0d;
+  --blanco-puro: #ffffff;
+  --gris-oscuro: #333333;
+
+  /* Colores secundarios (acentos de lujo) */
+  --dorado-suave: #c8a165;
+  --champagne: #fad3a0;
+  --gris-plateado: #b0b0b0;
+  --burdeos: #4b2e2d;
+
+  /* Paleta Opcional */
+  --verde-esmeralda-suave: #2c5f2d;
+  --beige-claro: #e7d9c4;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../imgs/texturas-fondo/texturagris.jpg");
+  opacity: 0.7;
+  z-index: -2;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+/* HERO */
+.header-nav {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 1.2rem 0;
+  font-family: "Cormorant Garamond", serif;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.nav {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo-nav {
+  position: relative;
+  left: 2rem;
+  width: 50px;
+  height: 50px;
+
+  background-image: url("../imgs/logo/logo.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+/*CTAS*/
+.div-ctas {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 7rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  z-index: 1000;
+}
+
+/* FOOTER */
+.footer {
+  background-color: rgba(0, 0, 0, 0.3); /* Capa negra con 30% de opacidad */
+  padding: 2rem 9rem;
+  color: var(--blanco-puro);
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-section {
+  flex: 1;
+}
+.footer-section-pages {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.footer-link {
+  color: var(--blanco-puro);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.footer-pages {
+  list-style: none;
+  padding: 0 0 0 2rem;
+}
+
+.footer-pages li {
+  padding-bottom: 0.5rem;
+}
+
+.footer-pages a {
+  font-size: 1.2rem;
+  color: var(--blanco-puro);
+  text-decoration: none;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  justify-content: flex-end;
+}
+
+.footer-socials img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-bottom {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-policies {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-policies a {
+  color: var(--blanco-puro);
+  text-decoration: none;
+}
+/* --------- MEDIA QUERYS --------- */
+@media screen and (max-width: 1400px) {
+  .intro-image-vertical {
+    flex: 1 1 40%;
+  }
+  .intro-text {
+    flex: 1 1 60%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .intro-image-vertical {
+    flex: 1 1 50%;
+  }
+  .intro-text {
+    flex: 1 1 50%;
+  }
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+  .intro-text h2 {
+    font-size: 1.3rem;
+  }
+  .intro-text p {
+    font-size: 1rem;
+  }
+  .gallery-item1 {
+    gap: 0;
+  }
+  .gallery-item1 p {
+    width: 100%;
+  }
+  .video-section,
+  .experiences-section {
+    padding: 4rem 4rem;
+  }
+  .footer {
+    padding: 2rem 4rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .intro-section {
+    padding: 4rem 4rem;
+  }
+  .intro-content {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .intro-image-vertical {
+    flex: none;
+    width: 100%;
+    height: 70vh;
+    margin-right: 0;
+  }
+  .intro-text {
+    margin-top: 1rem;
+  }
+  .intro-gallery {
+    flex-direction: column;
+    flex: none;
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+  }
+  .gallery-item1 {
+    flex: none;
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+  }
+  .gallery-item2 {
+    flex: none;
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+    z-index: 2;
+  }
+  .video-container {
+    margin-top: 25rem;
+  }
+  .experiences-container2 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-policies a:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+}

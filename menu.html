@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essentia</title>
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/collapse.css" />
+    <link
+      rel="icon"
+      href="assets/imgs/logo/Logo-ismael-3.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Menú de navegación fijo -->
+    <header class="team-header">
+      <nav>
+        <a href="index.html" class="logo-link">
+          <div class="logo imagen-logo"></div>
+        </a>
+        <div class="main-nav">
+          <div class="collapse">
+            <div class="nav-bar">
+              <span></span><span></span><span></span><span></span><span></span
+              ><span></span>
+            </div>
+          </div>
+          <div class="menu-on">
+            <ul class="menu-on-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Team -->
+    <section class="hero-team">
+      <div class="hero-content">
+        <h1>
+          <span class="text-black">Me</span><span class="text-white">nu</span>
+        </h1>
+      </div>
+      <div class="hero-image">
+        <img src="assets/imgs/platos/hero-menu.png" alt="Hero Menu Image" />
+      </div>
+      <div class="hero-letter">
+        <span class="design-letter">E</span>
+      </div>
+    </section>
+
+    <!-- Signature Dishes Section -->
+    <section class="signature-dishes">
+      <h1>Essentia's Signature Dishes</h1>
+      <p>
+        Our menu reflects the artistry and passion that define Essentia. Each
+        dish is a testament to our commitment to high-quality ingredients and
+        sophisticated flavors, bringing together the best of culinary traditions
+        with a modern twist. Discover the dishes that have become symbols of our
+        kitchen, each crafted to provide a unique taste experience that embodies
+        the spirit of <span class="highlight">Essentia</span>.
+      </p>
+    </section>
+
+    <!-- Four Photos Section -->
+    <section class="four-photos">
+      <div class="photo-item">
+        <h2>- Virtue -</h2>
+        <img src="assets/imgs/platos/4Cajas/virtud.jpg" alt="Virtue" />
+      </div>
+      <div class="photo-item">
+        <h2>- Simplicity -</h2>
+        <img src="assets/imgs/platos/4Cajas/simplicidad.jpg" alt="Simplicity" />
+      </div>
+      <div class="photo-item">
+        <h2>- Creativity -</h2>
+        <img src="assets/imgs/platos/4Cajas/creatividad.jpg" alt="Creativity" />
+      </div>
+      <div class="photo-item">
+        <h2>- Elegance -</h2>
+        <img src="assets/imgs/platos/4Cajas/4foto.jpg" alt="Elegance" />
+      </div>
+    </section>
+
+    <!-- Plates That Define Us Section -->
+    <section class="plates-section">
+      <h1>Plates That Define Us</h1>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slide">
+            <img
+              src="assets/imgs/platos/foto-home-producto.jpg"
+              alt="Truffle Essence"
+            />
+            <div class="overlay">
+              <h2>Truffle Essence</h2>
+              <p>
+                A luxurious blend of black truffle and wild mushrooms, served
+                with a delicate truffle.
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="assets/imgs/platos/1.png" alt="Golden Lobster" />
+            <div class="overlay">
+              <h2>Golden Lobster</h2>
+              <p>
+                Succulent lobster tail poached in saffron butter, accompanied by
+                a gold leaf garnish.
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="assets/imgs/platos/2.png" alt="Caviar Delight" />
+            <div class="overlay">
+              <h2>Caviar Delight</h2>
+              <p>
+                Exquisite caviar served on a bed of creamy avocado mousse,
+                topped with edible flowers.
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="assets/imgs/platos/slider4.jpg" alt="Velvet Chocolate" />
+            <div class="overlay">
+              <h2>Velvet Chocolate</h2>
+              <p>
+                Rich dark chocolate mousse with a hint of espresso, finished
+                with a velvet texture.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <script>
+      let currentSlide = 0;
+
+      function moveSlide(direction) {
+        const slides = document.querySelectorAll(".slide");
+        const totalSlides = slides.length;
+
+        currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+        const offset = -currentSlide * 100;
+
+        document.querySelector(
+          ".slider"
+        ).style.transform = `translateX(${offset}%)`;
+      }
+    </script>
+
+    <!-- Discovery Menu Section -->
+    <section class="discovery-menu">
+      <h1>Our Exquisite Menus</h1>
+      <div class="menu-container">
+        <div class="menu-title">
+          <h1>Essentia’s Discovery Menu</h1>
+        </div>
+        <div class="menu-content">
+          <div class="menu-section">
+            <h2>SNACKS</h2>
+            <p>· Black Cáceres olive, flax, and amaranth</p>
+            <p>· Potato with Los Ibores cheese and dill</p>
+            <p>· Puff pastry with smoked bacon and oregano</p>
+          </div>
+          <div class="menu-section">
+            <h2>WHEN OUR LITTLE PIG GOES TO THE BEACH...</h2>
+            <p>· Tuna belly in red lard</p>
+            <p>· Tapioca crisp, salmon emulsion, and fried pork</p>
+            <p>· Garlic shrimp with chorizo seasoning</p>
+          </div>
+          <div class="menu-section">
+            <h2>THE LITTLE PIG SNACKING IN THE MEADOW...</h2>
+            <p>· Ham, mayonnaise, and tomato</p>
+            <p>
+              · Salchichón (cured sausage), pepper emulsion, and crispy wheat
+            </p>
+            <p>· Pâté, pickles, and plantain</p>
+            <p>· Double loin</p>
+            <p>· Taro empanadilla, lard, and cumin</p>
+            <p>· Pork tonnato with fried capers and black pepper</p>
+            <p>· Ink bun with squid and pig’s ear stew</p>
+            <p>· Pork crackling, scallops with citrus, and spring onion whey</p>
+          </div>
+          <div class="menu-section">
+            <h2>CAVIAR AND PORK...</h2>
+            <p>· Pork cheek flan and caviar</p>
+            <p>
+              · Lobster in reduced Iberian glaze, green curry, and pennyroyal
+            </p>
+            <p>· Pork face, crayfish, and creamy bird jus</p>
+            <p>· Partridge in the Alcántara style</p>
+          </div>
+          <div class="menu-section">
+            <h2>THE SWEET TOOTHED LITTLE PIG</h2>
+            <p>· Ham and cheese, matcha tea sponge cake, and quince</p>
+            <p>· Yuzu ganache, yogurt, fennel, and pork crackling</p>
+            <p>· Iberian chocolate with coffee and aged ham</p>
+            <p>· The cherry that is not a cherry</p>
+            <p>· Sweets and here comes the coconut</p>
+          </div>
+          <div class="menu-price">
+            <p>220 €/person</p>
+            <p>VAT included</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Foto width:100% -->
+    <section class="full-width-photo">
+      <img src="assets/imgs/platos/foto-hero.jpg" alt="Full Width Photo" />
+    </section>
+
+    <!-- Essentia’s Experience Menu Section -->
+    <section class="experience-menu">
+      <div class="menu-container">
+        <div class="menu-title">
+          <h1>Essentia’s Experience Menu</h1>
+        </div>
+        <div class="menu-content">
+          <div class="menu-section">
+            <h2>SNACKS</h2>
+            <p>
+              · Black Olive from the Andalusian Hills, saffron, and pine nuts
+            </p>
+            <p>
+              · Smoked Potato Foam with Piquillo pepper, truffle oil, and wild
+              herbs
+            </p>
+            <p>· Lobster Tartlet with dill, caviar, and roasted almonds</p>
+          </div>
+          <div class="menu-section">
+            <h2>WHEN THE GOURMET PIG GOES TO THE SEA...</h2>
+            <p>· Bluefin Tuna Belly with Iberian lardo and citrus reduction</p>
+            <p>· Crispy Tapioca Chips, salmon roe emulsion, and smoked eel</p>
+            <p>
+              · Grilled Langoustine with saffron beurre blanc and lemon verbena
+            </p>
+          </div>
+          <div class="menu-section">
+            <h2>THE LITTLE PIG ON THE FARM...</h2>
+            <p>
+              · Jamón Ibérico with fermented garlic mayonnaise and edible
+              flowers
+            </p>
+            <p>
+              · Sausage of Iberian Black Pig with smoked paprika and fermented
+              blackberries
+            </p>
+            <p>· Duck Pâté with homemade pickles and wild mushrooms</p>
+            <p>· Suckling Pig Terrine with truffle and foie gras mousse</p>
+            <p>· Crispy Pork Tacos, black bean puree, and chili-lime crema</p>
+            <p>
+              · Porco Tonnato, with fried capers, shallots, and black truffle
+            </p>
+            <p>
+              · Squid Ink Ravioli, Iberian ham filling, and sea urchin sauce
+            </p>
+            <p>· Slow-Cooked Pork Belly, wild fennel, and apple gelée</p>
+            <p>
+              · Crispy Pork Crackling, smoked scallops with blood orange and
+              herbs
+            </p>
+          </div>
+          <div class="menu-section">
+            <h2>CAVIAR & EXCLUSIVES...</h2>
+            <p>
+              · Caviar on a Bed of Lobster Bisque, gold leaf and fennel essence
+            </p>
+            <p>
+              · Seared Foie Gras, caramelized pears, and a reduction of Pedro
+              Ximénez
+            </p>
+            <p>
+              · Roasted Suckling Pig Face, langoustines, and yuzu-glazed jus
+            </p>
+            <p>
+              · Grilled Quail with white truffle, green peas, and Iberian ham
+            </p>
+            <p>
+              · Slow-Roasted Partridge with black truffle polenta and red wine
+              sauce
+            </p>
+          </div>
+          <div class="menu-section">
+            <h2>THE SWEET PIGLET...</h2>
+            <p>· Matcha and Foie Gras Mousse Cake with kumquat jam</p>
+            <p>
+              · Iberian Chocolate Soufflé, salted caramel, and crispy pig’s skin
+            </p>
+            <p>
+              · Saffron-Pistachio Ganache, mascarpone cream, and candied orange
+              peel
+            </p>
+            <p>· Cherry Blossom Gelato, cherry coulis, and golden honeycomb</p>
+            <p>
+              · Coconut and Lime Mousse with coconut foam, and passion fruit
+              sorbet
+            </p>
+          </div>
+          <div class="menu-price">
+            <div>
+              <p>330 €/person</p>
+              <p>VAT included</p>
+            </div>
+            <div>
+              <p>Wine Pairing (Optional): 175 €</p>
+              <p>(Paired wines from selected vineyards)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+    <footer class="footer">
+      <div class="footer-section">
+        <div class="footer-container">
+          <div class="footer-section">
+            <a href="index.html" class="footer-link">essentia.com</a>
+          </div>
+          <div class="footer-section-pages">
+            <h3>Pages</h3>
+            <ul class="footer-pages">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <div class="footer-socials">
+              <a href=""
+                ><img src="assets/imgs/icons/instagram.png" alt="Instagram"
+              /></a>
+              <a href=""
+                ><img src="assets/imgs/icons/facebook.png" alt="Facebook"
+              /></a>
+              <a href=""
+                ><img src="assets/imgs/icons/tiktok-sinfondo.png" alt="TikTok"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <img src="assets/imgs/logo/logo.png" alt="Essentia Logo" />
+            <span>&copy; 2024 Essentia</span>
+          </div>
+          <div class="footer-policies">
+            <a href="">Terms & Conditions</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Cookies Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

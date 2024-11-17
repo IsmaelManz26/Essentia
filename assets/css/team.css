@@ -187,6 +187,11 @@ header.menu-open .menu-on-nav li a:hover {
 .nav-bar {
   display: none;
 }
+.highlight {
+  color: var(--champagne);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+}
 
 /* HERO TEAM */
 .hero-team {
@@ -697,7 +702,7 @@ header.menu-open .menu-on-nav li a:hover {
     font-size: 30rem;
   }
   .timeline {
-    padding: 4rem 4rem;
+    padding: 4rem 2rem;
   }
   .executive-chef {
     padding: 4rem 2rem;
@@ -875,7 +880,8 @@ header.menu-open .menu-on-nav li a:hover {
   }
 
   .timeline-summary {
-    padding: 20px 10px;
+    padding: 0;
+    text-align: justify;
   }
 
   .timeline-summary p {

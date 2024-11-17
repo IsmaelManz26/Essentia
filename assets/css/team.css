@@ -706,6 +706,9 @@ header.menu-open .menu-on-nav li a:hover {
     margin-bottom: 15rem;
     gap: 2rem;
   }
+  .chef-content {
+    padding-left: 0;
+  }
   .chef-content p {
     text-align: justify;
     font-size: 1rem;
@@ -771,7 +774,8 @@ header.menu-open .menu-on-nav li a:hover {
   }
   .chef-de-partie-image {
     width: 100%;
-    margin-bottom: 1rem;
+    max-width: 100%;
+    padding-bottom: 1rem;
   }
   .chef-de-partie-content {
     width: 100%;
@@ -885,5 +889,11 @@ header.menu-open .menu-on-nav li a:hover {
   }
   .footer {
     padding: 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero-letter::after {
+    top: 130%;
   }
 }

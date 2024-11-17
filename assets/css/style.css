@@ -313,7 +313,7 @@ header.menu-open .menu-on-nav li a:hover {
   background-repeat: no-repeat;
 }
 .gallery-item1 p {
-  width: 70%;
+  width: 100%;
   font-size: 1.2rem;
   text-align: left;
   line-height: 1.6;

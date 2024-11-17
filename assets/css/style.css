@@ -110,7 +110,6 @@ nav {
   flex: 6;
   display: flex;
   justify-content: center;
-  padding-right: 4rem;
 }
 
 .menu-on {
@@ -181,6 +180,23 @@ header.menu-open .menu-on-nav li a:hover {
 
 .nav-bar {
   display: none;
+}
+
+.highlight {
+  color: var(--champagne);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+}
+
+.nav-svg {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-svg {
+    display: none;
+  }
 }
 
 /* FONDO */
@@ -328,11 +344,7 @@ header.menu-open .menu-on-nav li a:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
-.highlight {
-  color: var(--champagne);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  display: inline-block;
-}
+
 /* HISTORIA RESTAURANTE */
 .history-section {
   padding: 0 9rem 4rem 9rem;

@@ -239,6 +239,11 @@ header.menu-open .menu-on-nav li a:hover {
 .phrase-hero h2 {
   font-size: clamp(1.7rem, 1.267rem + 1.444vw, 3rem);
 }
+@media screen and (max-width: 500px) {
+  .phrase-hero h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  }
+}
 
 /* Para asegurar que la imagen del fondo no se vea afectada por el nav */
 .hero-section::before {
@@ -323,7 +328,7 @@ header.menu-open .menu-on-nav li a:hover {
 .gallery-image-horizontal {
   width: 100%;
   height: 100%;
-  background-image: url("../imgs/establecimiento/salon.png"); /* Cambia la ruta a tu imagen horizontal */
+  background-image: url("../imgs/establecimiento/salon.png");
   background-size: contain;
   background-position: left center;
   background-repeat: no-repeat;
@@ -339,7 +344,7 @@ header.menu-open .menu-on-nav li a:hover {
 .gallery-image-vertical {
   width: 100%;
   height: 100%;
-  background-image: url("../imgs/establecimiento/7.png"); /* Cambia la ruta a tu imagen vertical */
+  background-image: url("../imgs/establecimiento/7.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

@@ -684,6 +684,9 @@ header.menu-open .menu-on-nav li a:hover {
   .footer {
     padding: 2rem 2rem;
   }
+  .menu-title {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (max-width: 450px) {

@@ -412,6 +412,14 @@ header.menu-open .menu-on-nav li a:hover {
   display: flex;
   flex-flow: column nowrap;
 }
+.phone a {
+  color: var(--negro-profundo);
+  text-decoration: none;
+}
+
+.phone a:hover {
+  color: var(--champagne);
+}
 
 /* Google Maps Section */
 .maps-section {
@@ -631,6 +639,9 @@ header.menu-open .menu-on-nav li a:hover {
   }
   .footer {
     padding: 2rem 2rem;
+  }
+  .contact-info-container {
+    gap: 2rem;
   }
 }
 

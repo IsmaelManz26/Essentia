@@ -477,6 +477,14 @@ header.menu-open .menu-on-nav li a:hover {
   width: 30px;
   height: 30px;
 }
+@media screen and (max-width: 501px) {
+  .chef-socials {
+    padding-bottom: 2rem;
+  }
+  .sous-chef-socials {
+    padding-bottom: 1rem;
+  }
+}
 
 /* Culinary Team Section */
 .culinary-team {
@@ -598,6 +606,12 @@ header.menu-open .menu-on-nav li a:hover {
 /* Align right content to the right */
 .chef-de-partie-item.right .chef-de-partie-socials {
   justify-content: flex-end;
+}
+@media screen and (max-width: 500px) {
+  .chef-de-partie-socials,
+  .chef-de-partie-item.right .chef-de-partie-socials {
+    justify-content: center;
+  }
 }
 
 /* Full Team Section */
